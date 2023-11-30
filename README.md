@@ -42,9 +42,8 @@ Relational database modeling is not merely a theoretical exercise but a practica
 # Data Definition and Manipulation Language
 
 ## DDL (Data Definition Language)
-   - **Table Creation:** Use DDL statements like `CREATE TABLE Students (Student_ID INT PRIMARY KEY, Name VARCHAR(255), Address_ID INT FOREIGN KEY REFERENCES Address(Address_ID));` to create tables.
-   - **Indexing and Partitioning:** Define indexes with statements like `CREATE INDEX idx_Student_ID ON Students (Student_ID);` and set up partitioning based on requirements.
+   - **Table Creation:** Use DDL statements like `CREATE TABLE`
+   - **Indexing and Partitioning:** Define indexes with statements like `CREATE INDEX` and set up partitioning based on requirements.
 
 ## DML (Data Manipulation Language)
-   - **Query Writing:** Write SQL queries such as `SELECT * FROM Students WHERE Name='John';` to retrieve data and `INSERT INTO Students VALUES (1, 'John', 101);` to insert data.
-   - **Adherence to Schema:** Ensure queries align with the defined schema, preventing violations of constraints like inserting a duplicate 'Student_ID.'
+   - Write SQL queries such as `SELECT * FROM Students WHERE Name='John';` to retrieve data and `INSERT INTO Students VALUES (1, 'John', 101);` to insert data.
