@@ -29,7 +29,7 @@ Relational database modeling is not merely a theoretical exercise but a practica
    - **Attribute Refinement:** Specify data types (e.g., VARCHAR, INT) and constraints (e.g., NOT NULL) for each attribute.
      
 # Refining
-   - **Normalization Review:** Confirm that normalization principles are maintained. Ensure each table is in 3NF to eliminate all types of dependencies.
+   - **Normalization Review:** Confirm that [normalization](Normalization.md) principles are maintained. Ensure each table is in 3NF to eliminate all types of dependencies.
    - **Relationship Validation:** Verify relationships, such as the 'enrolls in' relationship, ensuring correct cardinalities (e.g., one-to-many).
    - **Data Type Adjustment:** Adjust data types based on the specific requirements of the chosen database system.
      
