@@ -20,12 +20,13 @@ Relational database modeling is not merely a theoretical exercise but a practica
 
 # Conceptual Design
    - **Scope and Purpose:** Define the scope by outlining the business goals. For instance, if designing a database for a university, the scope might include managing student information, courses, and grades.
-   - **Entities and Relationships:** Identify entities like 'Student,' 'Course,' and 'Department.' Establish relationships such as 'enrolls in' between 'Student' and 'Course.'
+   - **Entities:** Identify entities like 'Student,' 'Course,' and 'Department.' 
+   - **Relationships:** Establish [relationships](Relation.md) such as 'enrolls in' between 'Student' and 'Course.'
    - **ERD:** Create an ERD illustrating entities, attributes (e.g., 'Student ID,' 'Course Name'), and relationships.
      
 # Logical Design
-   - **Translating ERD to Logical Model:** Map the 'Student' entity to a 'Students' table with attributes like 'Student_ID' (primary key), 'Name,' and 'Address_ID' (foreign key).
-   - **Key Identification:** Define 'Student_ID' as the primary key and 'Address_ID' as a foreign key linking to the 'Address' table.
+   - **Translating ERD to Logical Model:** Map the 'Student' entity to a 'Student' table with attributes like 'id' (primary key), 'name' and 'address_id' (foreign key).
+   - **Key Identification:** Define 'id' as the primary key and 'address_id' as a foreign key linking to the 'Address' table.
    - **Attribute Refinement:** Specify data types (e.g., VARCHAR, INT) and constraints (e.g., NOT NULL) for each attribute.
      
 # Refining
@@ -34,7 +35,7 @@ Relational database modeling is not merely a theoretical exercise but a practica
    - **Data Type Adjustment:** Adjust data types based on the specific requirements of the chosen database system.
      
 # Physical Design
-   - **Storage Structures:** Decide on storage structures. For example, use indexing on 'Student_ID' for faster retrieval and consider partitioning large tables for efficient data management.
+   - **Storage Structures:** Decide on storage structures for entities and relations
    - **Performance Optimization:** Optimize for performance by choosing appropriate data types, indexing columns used in WHERE clauses, and considering the use of materialized views.
    - **Denormalization Decision:** Consider denormalization if certain queries require aggregations and join operations that impact performance.
 
